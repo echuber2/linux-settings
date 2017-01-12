@@ -26,3 +26,5 @@ I found this works sometimes but there is a full-screen diagonal tear on some ap
 
 ### screen tearing fixes on nvidia
 The issue with PRIME mixed-gpu laptops is complicated and only got support recently (as of late 2016/early 2017). If you want to stop tearing when the dGPU is running, you can follow the latest instructions from Nvidia [here](https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/).
+
+On a desktop dGPU setup, it may an easier situation. [link](https://www.gamingonlinux.com/articles/i-have-finally-found-a-way-to-sort-out-screen-tearing-on-nvidia-with-linux.7213/)
