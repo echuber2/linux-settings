@@ -19,7 +19,7 @@ If it doesn't complain about X already running, it will generate a starter xorg.
 #### clutter hacks
 If you're using cinnamon/clutter, another option that may give better framerates for full-screen 3D is to use `sna` mode but add these lines to `/etc/environment`:
 
-`CLUTTER_PAINT=disable-clipped-redraws:disable-culling`
+`CLUTTER_PAINT=disable-clipped-redraws:disable-culling`   
 `CLUTTER_VBLANK=True`
 
 I found this works sometimes but there is a full-screen diagonal tear on some applications as the window rectangle is synced as two separate triangles out of sync by a frame, apparently. The issue may be resolved on newer driver builds. With `uxa` mode I found the clutter hacks made no difference.
