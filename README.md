@@ -6,7 +6,7 @@ Various settings for Linux stuff
 ### screen tearing fixes on intel
 
 #### uxa instead of sna
-If you have a laptop with Nvidia dGPU/PRIME, it's complicated to ensure there is no tearing. The simplest solution for me is to leave the dGPU off most of the time, using the Intel iGPU and adjusting the settingsfor the `intel` driver (aka `xf86-video-intel`, `xserver-xorg-video-intel`).
+If you have a laptop with Nvidia dGPU/PRIME, it's complicated to ensure there is no tearing. The simplest solution for me is to leave the dGPU off most of the time, using the Intel iGPU and adjusting the settings for the `intel` driver (aka `xf86-video-intel`, `xserver-xorg-video-intel`).
 
 The file `20-intel-smooth.conf` contains a settings change I found necessary to eliminate tearing. In particular, I need to use `uxa`, not `sna` for the the acceleration mode. `glamor` also seems to work okay. (If you haven't specified any mode, I believe `sna` is the default.)
 
