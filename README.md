@@ -22,7 +22,7 @@ If you're using Cinnamon/clutter, another option that may give better framerates
 `CLUTTER_PAINT=disable-clipped-redraws:disable-culling`   
 `CLUTTER_VBLANK=True`
 
-I found this works sometimes but there is a full-screen diagonal tear on some applications as the window rectangle is synced as two separate triangles out of sync by a frame, apparently. The issue may be resolved on newer driver builds. With `uxa` mode I found the clutter hacks made no difference, but it doesn't seem to hurt to enable them.
+I found this works sometimes but there is a full-screen diagonal tear on some applications as the window rectangle is synced as two separate triangles out of sync by a frame, apparently. The issue may be resolved on newer driver builds. With `uxa`/`glamor` modes these clutter hacks seem to make occasional stuttering get worse.
 
 #### modesetting driver
 Many people reported that uninstalling the intel driver and using the `modesetting` driver instead solved their issues. However when I try to use `modesetting`, Cinnamon always falls back to software rendering mode. :-/
